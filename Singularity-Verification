@@ -14,9 +14,10 @@ From: ubuntu:20.04
 	cd /planner
 	./fetch.sh
 	./build.sh
+	./fetch-and-build-verify.sh
 
 %runscript
-	exec /planner/run-singularity.sh "$@"
+	exec /planner/run-singularity-verify.sh "$@"
 
 
 %labels
