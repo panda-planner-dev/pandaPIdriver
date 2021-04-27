@@ -7,8 +7,8 @@ cd ../pandaPIgrounder
 git submodule init
 git submodule update
 cd cpddl
-make -j boruvka opts bliss lpsolve
-make -j
+make boruvka opts bliss lpsolve
+make
 cd ../src
 make -j
 
